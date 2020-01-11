@@ -1,0 +1,11 @@
+# Validates that the docker image of the project builds correctly.
+build_docker_image:
+  image: docker:stable
+  stage: test
+  cache: {}
+  # This service allows to use docker inside a docker container.
+  services:
+    - docker:dind  
+  script:
+    - echo "Building docker image..."
+    - docker build .
