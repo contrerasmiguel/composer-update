@@ -1,4 +1,4 @@
 setuptools==40.6.3
-wheel==0.32.3
+wheel==0.38.1
 ruamel.yaml==0.15.81
 behave==1.2.6
